@@ -41,24 +41,24 @@ export default class AutoScroller {
     const isLeft = scrollLeft === 0;
     const isRight = scrollWidth - scrollLeft - clientWidth === 0;
 
-    if (translate.y >= maxTranslate.y - height / 2 && !isBottom) {
+    if (translate.y >= maxTranslate.y - height  && !isBottom) {
       // Scroll Down
       direction.y = 1;
       speed.y =
         acceleration.y *
-        Math.abs((maxTranslate.y - height / 2 - translate.y) / height);
+        Math.abs((maxTranslate.y - height  - translate.y) / height);
     } else if (translate.x >= maxTranslate.x - width / 2 && !isRight) {
       // Scroll Right
       direction.x = 1;
       speed.x =
         acceleration.x *
         Math.abs((maxTranslate.x - width / 2 - translate.x) / width);
-    } else if (translate.y <= minTranslate.y + height / 2 && !isTop) {
+    } else if (translate.y <= minTranslate.y + height  && !isTop) {
       // Scroll Up
       direction.y = -1;
       speed.y =
         acceleration.y *
-        Math.abs((translate.y - height / 2 - minTranslate.y) / height);
+        Math.abs((translate.y - height  - minTranslate.y) / height);
     } else if (translate.x <= minTranslate.x + width / 2 && !isLeft) {
       // Scroll Left
       direction.x = -1;
