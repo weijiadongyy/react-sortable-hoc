@@ -1,13 +1,13 @@
 {
-  "name": "lsaaaaaaa-react-sortable-hoc",
-  "version": "1.0.0",
-  "description": "Set of higher-order components to turn any list into a sortable, touch-friendly, animated list",
+  "name": "lensung-sort-serioussnow",
+  "version": "1.0.5",
+  "description": "",
   "author": {
     "name": "ls",
     "email": "ls.com"
   },
-  "user": "clauderic",
-  "homepage": "https://github.com/clauderic/react-sortable-hoc",
+  "user": "ls",
+  "homepage": "https://github.com/weijiadongyy/react-sortable-hoc",
   "source": "src/index.js",
   "main": "dist/react-sortable-hoc.js",
   "umd:main": "dist/react-sortable-hoc.umd.js",
